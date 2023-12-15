@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1EBC532B2C3167009F5BEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1EBC522B2C3167009F5BEE /* SceneDelegate.swift */; };
+		2F1EBC552B2C3167009F5BEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1EBC542B2C3167009F5BEE /* AppDelegate.swift */; };
+		2F1EBC572B2C3168009F5BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1EBC562B2C3168009F5BEE /* Assets.xcassets */; };
+		2F1EBC5A2B2C3168009F5BEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1EBC592B2C3168009F5BEE /* Preview Assets.xcassets */; };
+		2F1EBC652B2C331B009F5BEE /* ConstraintsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1EBC642B2C331B009F5BEE /* ConstraintsManager.swift */; };
+		2F5320562B2C362B0012BBFD /* ScreenSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320552B2C362B0012BBFD /* ScreenSizeManager.swift */; };
+		2F5320592B2C36CD0012BBFD /* pop-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F5320582B2C36CD0012BBFD /* pop-up.wav */; };
+		2F53205B2B2C36D50012BBFD /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F53205A2B2C36D50012BBFD /* click.wav */; };
+		2F53205F2B2C5B780012BBFD /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53205E2B2C5B780012BBFD /* ContactsModel.swift */; };
+		2F5320632B2C5C2C0012BBFD /* AboutMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320622B2C5C2C0012BBFD /* AboutMeModel.swift */; };
+		2F5320692B2C5D2B0012BBFD /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320682B2C5D2B0012BBFD /* EducationModel.swift */; };
+		2F53206C2B2C5DCD0012BBFD /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53206B2B2C5DCD0012BBFD /* ExperienceModel.swift */; };
+		2F5320702B2C5E160012BBFD /* PassionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53206F2B2C5E160012BBFD /* PassionsModel.swift */; };
+		2F8C6E542B342F8C004514A4 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E532B342F8C004514A4 /* Identifiers.swift */; };
+		2F8C6E582B343019004514A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C6E572B343019004514A4 /* LaunchScreen.storyboard */; };
+		2F8C6E5A2B343032004514A4 /* LaunchScreenII.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8C6E592B343032004514A4 /* LaunchScreenII.storyboard */; };
+		2F8C6E692B34310A004514A4 /* AboutMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E682B34310A004514A4 /* AboutMeTableViewCell.swift */; };
+		2F8C6E6B2B343130004514A4 /* LanguagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E6A2B343130004514A4 /* LanguagesViewCell.swift */; };
+		2F8C6E6D2B34316D004514A4 /* LocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E6C2B34316D004514A4 /* LocationViewCell.swift */; };
+		2F8C6E702B3431A2004514A4 /* MyEducationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E6F2B3431A2004514A4 /* MyEducationViewCell.swift */; };
+		2F8C6E722B3431C7004514A4 /* EducationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E712B3431C7004514A4 /* EducationViewCell.swift */; };
+		2F8C6E742B3431F9004514A4 /* MyCertificatesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E732B3431F9004514A4 /* MyCertificatesViewCell.swift */; };
+		2F8C6E762B343289004514A4 /* CertificateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E752B343289004514A4 /* CertificateViewCell.swift */; };
+		2F8C6E782B3432B6004514A4 /* SkillsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E772B3432B6004514A4 /* SkillsViewCell.swift */; };
+		2F8C6E7B2B3432EC004514A4 /* ExperienceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E7A2B3432EC004514A4 /* ExperienceViewCell.swift */; };
+		2F8C6E7E2B343322004514A4 /* PassionsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E7D2B343322004514A4 /* PassionsViewCell.swift */; };
+		2F8C6E822B3433B3004514A4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E812B3433B3004514A4 /* LaunchScreen.swift */; };
+		2F8C6E852B3433E7004514A4 /* ContactsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E842B3433E7004514A4 /* ContactsSheetViewController.swift */; };
+		2F8C6E872B343420004514A4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E862B343420004514A4 /* CustomButton.swift */; };
+		2F8C6E892B34343C004514A4 /* CustomButtonAttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E882B34343C004514A4 /* CustomButtonAttributedText.swift */; };
+		2F8C6E8C2B343465004514A4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E8B2B343465004514A4 /* TabBarViewController.swift */; };
+		2F8C6E8F2B3434A4004514A4 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E8E2B3434A4004514A4 /* AboutMeViewController.swift */; };
+		2F8C6E922B3434E9004514A4 /* CareerGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E912B3434E9004514A4 /* CareerGoalsViewController.swift */; };
+		2F8C6E942B343554004514A4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E932B343554004514A4 /* CustomView.swift */; };
+		2F8C6E962B3435D1004514A4 /* CareerGoalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E952B3435D1004514A4 /* CareerGoalsModel.swift */; };
+		2F8C6E992B343655004514A4 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E982B343655004514A4 /* EducationViewController.swift */; };
+		2F8C6E9C2B343695004514A4 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E9B2B343695004514A4 /* ExperienceViewController.swift */; };
+		2F8C6E9F2B3436C7004514A4 /* PassionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C6E9E2B3436C7004514A4 /* PassionsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F1EBC4F2B2C3167009F5BEE /* AayushPortFolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AayushPortFolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1EBC522B2C3167009F5BEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F1EBC542B2C3167009F5BEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F1EBC562B2C3168009F5BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F1EBC592B2C3168009F5BEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F1EBC642B2C331B009F5BEE /* ConstraintsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsManager.swift; sourceTree = "<group>"; };
+		2F5320552B2C362B0012BBFD /* ScreenSizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScreenSizeManager.swift; path = "AayushPortFolio/Manager/Constraints Manager/ScreenSizeManager.swift"; sourceTree = SOURCE_ROOT; };
+		2F5320582B2C36CD0012BBFD /* pop-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pop-up.wav"; sourceTree = "<group>"; };
+		2F53205A2B2C36D50012BBFD /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		2F53205E2B2C5B780012BBFD /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsModel.swift; path = AayushPortFolio/Manager/Model/ContactsModel/ContactsModel.swift; sourceTree = SOURCE_ROOT; };
+		2F5320622B2C5C2C0012BBFD /* AboutMeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeModel.swift; path = AayushPortFolio/Manager/Model/AboutMeModel/AboutMeModel.swift; sourceTree = SOURCE_ROOT; };
+		2F5320682B2C5D2B0012BBFD /* EducationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EducationModel.swift; path = AayushPortFolio/Manager/Model/EducationModel/EducationModel.swift; sourceTree = SOURCE_ROOT; };
+		2F53206B2B2C5DCD0012BBFD /* ExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExperienceModel.swift; path = AayushPortFolio/Manager/Model/ExperienceModel/ExperienceModel.swift; sourceTree = SOURCE_ROOT; };
+		2F53206F2B2C5E160012BBFD /* PassionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassionsModel.swift; path = AayushPortFolio/Manager/Model/PassionsModel/PassionsModel.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E532B342F8C004514A4 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Identifiers.swift; path = AayushPortFolio/Manager/Model/Identifiers/Identifiers.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E572B343019004514A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AayushPortFolio/Manager/View/LaunchScreen/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		2F8C6E592B343032004514A4 /* LaunchScreenII.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreenII.storyboard; path = AayushPortFolio/Manager/View/LaunchScreen/LaunchScreenII.storyboard; sourceTree = SOURCE_ROOT; };
+		2F8C6E5C2B34307A004514A4 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		2F8C6E5D2B34307A004514A4 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		2F8C6E5E2B34307A004514A4 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2F8C6E5F2B34307A004514A4 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		2F8C6E602B34307A004514A4 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		2F8C6E612B34307B004514A4 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		2F8C6E622B34307B004514A4 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		2F8C6E632B34307B004514A4 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F8C6E682B34310A004514A4 /* AboutMeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeTableViewCell.swift; path = AayushPortFolio/Manager/View/AboutMe/AboutMeTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E6A2B343130004514A4 /* LanguagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguagesViewCell.swift; path = AayushPortFolio/Manager/View/AboutMe/LanguagesViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E6C2B34316D004514A4 /* LocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationViewCell.swift; path = AayushPortFolio/Manager/View/AboutMe/LocationViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E6F2B3431A2004514A4 /* MyEducationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyEducationViewCell.swift; path = AayushPortFolio/Manager/View/Education/MyEducationViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E712B3431C7004514A4 /* EducationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EducationViewCell.swift; path = AayushPortFolio/Manager/View/Education/EducationViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E732B3431F9004514A4 /* MyCertificatesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCertificatesViewCell.swift; path = AayushPortFolio/Manager/View/Education/MyCertificatesViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E752B343289004514A4 /* CertificateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CertificateViewCell.swift; path = AayushPortFolio/Manager/View/Education/CertificateViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E772B3432B6004514A4 /* SkillsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkillsViewCell.swift; path = AayushPortFolio/Manager/View/Education/SkillsViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E7A2B3432EC004514A4 /* ExperienceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExperienceViewCell.swift; path = AayushPortFolio/Manager/View/Experience/ExperienceViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E7D2B343322004514A4 /* PassionsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassionsViewCell.swift; path = AayushPortFolio/Manager/View/Passions/PassionsViewCell.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E812B3433B3004514A4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchScreen.swift; path = AayushPortFolio/Controller/LaunchScreen/LaunchScreen.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E842B3433E7004514A4 /* ContactsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsSheetViewController.swift; path = AayushPortFolio/Controller/Contacts/ContactsSheetViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E862B343420004514A4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = AayushPortFolio/Controller/Contacts/CustomButton.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E882B34343C004514A4 /* CustomButtonAttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButtonAttributedText.swift; path = AayushPortFolio/Controller/Contacts/CustomButtonAttributedText.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E8B2B343465004514A4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = AayushPortFolio/Controller/TabBar/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E8E2B3434A4004514A4 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeViewController.swift; path = AayushPortFolio/Controller/AboutMe/AboutMeViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E912B3434E9004514A4 /* CareerGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CareerGoalsViewController.swift; path = AayushPortFolio/Controller/CareerGoals/CareerGoalsViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E932B343554004514A4 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = AayushPortFolio/View/CustomView/CustomView.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E952B3435D1004514A4 /* CareerGoalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CareerGoalsModel.swift; path = AayushPortFolio/Model/CareerGoalsModel/CareerGoalsModel.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E982B343655004514A4 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EducationViewController.swift; path = AayushPortFolio/Controller/Education/EducationViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E9B2B343695004514A4 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExperienceViewController.swift; path = AayushPortFolio/Controller/Experience/ExperienceViewController.swift; sourceTree = SOURCE_ROOT; };
+		2F8C6E9E2B3436C7004514A4 /* PassionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassionsViewController.swift; path = AayushPortFolio/Controller/Passions/PassionsViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F1EBC4C2B2C3167009F5BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F1EBC462B2C3167009F5BEE = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC512B2C3167009F5BEE /* AayushPortfolio */,
+				2F1EBC502B2C3167009F5BEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F1EBC502B2C3167009F5BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC4F2B2C3167009F5BEE /* AayushPortFolio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F1EBC512B2C3167009F5BEE /* AayushPortfolio */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC542B2C3167009F5BEE /* AppDelegate.swift */,
+				2F1EBC522B2C3167009F5BEE /* SceneDelegate.swift */,
+				2F1EBC622B2C3269009F5BEE /* Manager */,
+				2F5320572B2C36890012BBFD /* Model */,
+				2F8C6E552B342FCD004514A4 /* View */,
+				2F8C6E7F2B343391004514A4 /* Controller */,
+				2F1EBC582B2C3168009F5BEE /* Preview Content */,
+			);
+			path = AayushPortfolio;
+			sourceTree = "<group>";
+		};
+		2F1EBC582B2C3168009F5BEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC592B2C3168009F5BEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F1EBC622B2C3269009F5BEE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC632B2C3286009F5BEE /* Constraints Manager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2F1EBC632B2C3286009F5BEE /* Constraints Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC642B2C331B009F5BEE /* ConstraintsManager.swift */,
+				2F5320552B2C362B0012BBFD /* ScreenSizeManager.swift */,
+			);
+			path = "Constraints Manager";
+			sourceTree = "<group>";
+		};
+		2F5320572B2C36890012BBFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E522B342F74004514A4 /* Identifiers */,
+				2F53206E2B2C5DFE0012BBFD /* PassionsModel */,
+				2F53206A2B2C5DC20012BBFD /* ExperienceModel */,
+				2F5320672B2C5D180012BBFD /* EducationModel */,
+				2F5320642B2C5CE60012BBFD /* CareerGoalsModel */,
+				2F5320612B2C5C190012BBFD /* AboutMeModel */,
+				2F53205D2B2C5B630012BBFD /* ContactsModel */,
+				2F53205C2B2C5B0C0012BBFD /* Sound Effects */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F53205C2B2C5B0C0012BBFD /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				2F53205A2B2C36D50012BBFD /* click.wav */,
+				2F5320582B2C36CD0012BBFD /* pop-up.wav */,
+			);
+			path = "Sound Effects";
+			sourceTree = "<group>";
+		};
+		2F53205D2B2C5B630012BBFD /* ContactsModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F53205E2B2C5B780012BBFD /* ContactsModel.swift */,
+			);
+			path = ContactsModel;
+			sourceTree = "<group>";
+		};
+		2F5320612B2C5C190012BBFD /* AboutMeModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F5320622B2C5C2C0012BBFD /* AboutMeModel.swift */,
+			);
+			path = AboutMeModel;
+			sourceTree = "<group>";
+		};
+		2F5320642B2C5CE60012BBFD /* CareerGoalsModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E952B3435D1004514A4 /* CareerGoalsModel.swift */,
+			);
+			path = CareerGoalsModel;
+			sourceTree = "<group>";
+		};
+		2F5320672B2C5D180012BBFD /* EducationModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F5320682B2C5D2B0012BBFD /* EducationModel.swift */,
+			);
+			path = EducationModel;
+			sourceTree = "<group>";
+		};
+		2F53206A2B2C5DC20012BBFD /* ExperienceModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F53206B2B2C5DCD0012BBFD /* ExperienceModel.swift */,
+			);
+			path = ExperienceModel;
+			sourceTree = "<group>";
+		};
+		2F53206E2B2C5DFE0012BBFD /* PassionsModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F53206F2B2C5E160012BBFD /* PassionsModel.swift */,
+			);
+			path = PassionsModel;
+			sourceTree = "<group>";
+		};
+		2F8C6E522B342F74004514A4 /* Identifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E532B342F8C004514A4 /* Identifiers.swift */,
+			);
+			path = Identifiers;
+			sourceTree = "<group>";
+		};
+		2F8C6E552B342FCD004514A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E7C2B343314004514A4 /* Passions */,
+				2F8C6E792B3432DC004514A4 /* Experience */,
+				2F8C6E6E2B343194004514A4 /* Education */,
+				2F8C6E672B3430F2004514A4 /* AboutMe */,
+				2F8C6E642B3430B1004514A4 /* CustomView */,
+				2F8C6E5B2B34304B004514A4 /* CustomFonts */,
+				2F8C6E562B342FFE004514A4 /* LaunchScreen */,
+				2F1EBC562B2C3168009F5BEE /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F8C6E562B342FFE004514A4 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E572B343019004514A4 /* LaunchScreen.storyboard */,
+				2F8C6E592B343032004514A4 /* LaunchScreenII.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2F8C6E5B2B34304B004514A4 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E602B34307A004514A4 /* Nunito-Black.ttf */,
+				2F8C6E5D2B34307A004514A4 /* Nunito-Bold.ttf */,
+				2F8C6E5E2B34307A004514A4 /* Nunito-ExtraBold.ttf */,
+				2F8C6E622B34307B004514A4 /* Nunito-ExtraLight.ttf */,
+				2F8C6E5F2B34307A004514A4 /* Nunito-Light.ttf */,
+				2F8C6E612B34307B004514A4 /* Nunito-Medium.ttf */,
+				2F8C6E5C2B34307A004514A4 /* Nunito-Regular.ttf */,
+				2F8C6E632B34307B004514A4 /* Nunito-SemiBold.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		2F8C6E642B3430B1004514A4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E932B343554004514A4 /* CustomView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		2F8C6E672B3430F2004514A4 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E682B34310A004514A4 /* AboutMeTableViewCell.swift */,
+				2F8C6E6A2B343130004514A4 /* LanguagesViewCell.swift */,
+				2F8C6E6C2B34316D004514A4 /* LocationViewCell.swift */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		2F8C6E6E2B343194004514A4 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E6F2B3431A2004514A4 /* MyEducationViewCell.swift */,
+				2F8C6E712B3431C7004514A4 /* EducationViewCell.swift */,
+				2F8C6E772B3432B6004514A4 /* SkillsViewCell.swift */,
+				2F8C6E732B3431F9004514A4 /* MyCertificatesViewCell.swift */,
+				2F8C6E752B343289004514A4 /* CertificateViewCell.swift */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		2F8C6E792B3432DC004514A4 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E7A2B3432EC004514A4 /* ExperienceViewCell.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		2F8C6E7C2B343314004514A4 /* Passions */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E7D2B343322004514A4 /* PassionsViewCell.swift */,
+			);
+			path = Passions;
+			sourceTree = "<group>";
+		};
+		2F8C6E7F2B343391004514A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E9D2B3436B9004514A4 /* Passions */,
+				2F8C6E9A2B343688004514A4 /* Experience */,
+				2F8C6E972B343648004514A4 /* Education */,
+				2F8C6E902B3434D9004514A4 /* CareerGoals */,
+				2F8C6E8D2B343494004514A4 /* AboutMe */,
+				2F8C6E8A2B343459004514A4 /* TabBar */,
+				2F8C6E832B3433D4004514A4 /* Contacts */,
+				2F8C6E802B3433A2004514A4 /* LaunchScreen */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F8C6E802B3433A2004514A4 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E812B3433B3004514A4 /* LaunchScreen.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2F8C6E832B3433D4004514A4 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E842B3433E7004514A4 /* ContactsSheetViewController.swift */,
+				2F8C6E862B343420004514A4 /* CustomButton.swift */,
+				2F8C6E882B34343C004514A4 /* CustomButtonAttributedText.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		2F8C6E8A2B343459004514A4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E8B2B343465004514A4 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2F8C6E8D2B343494004514A4 /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E8E2B3434A4004514A4 /* AboutMeViewController.swift */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		2F8C6E902B3434D9004514A4 /* CareerGoals */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E912B3434E9004514A4 /* CareerGoalsViewController.swift */,
+			);
+			path = CareerGoals;
+			sourceTree = "<group>";
+		};
+		2F8C6E972B343648004514A4 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E982B343655004514A4 /* EducationViewController.swift */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		2F8C6E9A2B343688004514A4 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E9B2B343695004514A4 /* ExperienceViewController.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		2F8C6E9D2B3436B9004514A4 /* Passions */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C6E9E2B3436C7004514A4 /* PassionsViewController.swift */,
+			);
+			path = Passions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F1EBC4E2B2C3167009F5BEE /* AayushPortFolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F1EBC5D2B2C3168009F5BEE /* Build configuration list for PBXNativeTarget "AayushPortFolio" */;
+			buildPhases = (
+				2F1EBC4B2B2C3167009F5BEE /* Sources */,
+				2F1EBC4C2B2C3167009F5BEE /* Frameworks */,
+				2F1EBC4D2B2C3167009F5BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AayushPortFolio;
+			productName = AayushPortfolio;
+			productReference = 2F1EBC4F2B2C3167009F5BEE /* AayushPortFolio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F1EBC472B2C3167009F5BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					2F1EBC4E2B2C3167009F5BEE = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F1EBC4A2B2C3167009F5BEE /* Build configuration list for PBXProject "AayushPortFolio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F1EBC462B2C3167009F5BEE;
+			productRefGroup = 2F1EBC502B2C3167009F5BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F1EBC4E2B2C3167009F5BEE /* AayushPortFolio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F1EBC4D2B2C3167009F5BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1EBC5A2B2C3168009F5BEE /* Preview Assets.xcassets in Resources */,
+				2F5320592B2C36CD0012BBFD /* pop-up.wav in Resources */,
+				2F1EBC572B2C3168009F5BEE /* Assets.xcassets in Resources */,
+				2F8C6E5A2B343032004514A4 /* LaunchScreenII.storyboard in Resources */,
+				2F8C6E582B343019004514A4 /* LaunchScreen.storyboard in Resources */,
+				2F53205B2B2C36D50012BBFD /* click.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F1EBC4B2B2C3167009F5BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C6E962B3435D1004514A4 /* CareerGoalsModel.swift in Sources */,
+				2F53205F2B2C5B780012BBFD /* ContactsModel.swift in Sources */,
+				2F8C6E852B3433E7004514A4 /* ContactsSheetViewController.swift in Sources */,
+				2F8C6E8F2B3434A4004514A4 /* AboutMeViewController.swift in Sources */,
+				2F8C6E892B34343C004514A4 /* CustomButtonAttributedText.swift in Sources */,
+				2F8C6E922B3434E9004514A4 /* CareerGoalsViewController.swift in Sources */,
+				2F8C6E9F2B3436C7004514A4 /* PassionsViewController.swift in Sources */,
+				2F8C6E762B343289004514A4 /* CertificateViewCell.swift in Sources */,
+				2F8C6E8C2B343465004514A4 /* TabBarViewController.swift in Sources */,
+				2F8C6E702B3431A2004514A4 /* MyEducationViewCell.swift in Sources */,
+				2F8C6E872B343420004514A4 /* CustomButton.swift in Sources */,
+				2F8C6E6D2B34316D004514A4 /* LocationViewCell.swift in Sources */,
+				2F8C6E9C2B343695004514A4 /* ExperienceViewController.swift in Sources */,
+				2F8C6E942B343554004514A4 /* CustomView.swift in Sources */,
+				2F5320562B2C362B0012BBFD /* ScreenSizeManager.swift in Sources */,
+				2F8C6E992B343655004514A4 /* EducationViewController.swift in Sources */,
+				2F8C6E742B3431F9004514A4 /* MyCertificatesViewCell.swift in Sources */,
+				2F8C6E7E2B343322004514A4 /* PassionsViewCell.swift in Sources */,
+				2F1EBC652B2C331B009F5BEE /* ConstraintsManager.swift in Sources */,
+				2F5320632B2C5C2C0012BBFD /* AboutMeModel.swift in Sources */,
+				2F5320692B2C5D2B0012BBFD /* EducationModel.swift in Sources */,
+				2F8C6E7B2B3432EC004514A4 /* ExperienceViewCell.swift in Sources */,
+				2F5320702B2C5E160012BBFD /* PassionsModel.swift in Sources */,
+				2F8C6E822B3433B3004514A4 /* LaunchScreen.swift in Sources */,
+				2F1EBC552B2C3167009F5BEE /* AppDelegate.swift in Sources */,
+				2F8C6E722B3431C7004514A4 /* EducationViewCell.swift in Sources */,
+				2F53206C2B2C5DCD0012BBFD /* ExperienceModel.swift in Sources */,
+				2F1EBC532B2C3167009F5BEE /* SceneDelegate.swift in Sources */,
+				2F8C6E782B3432B6004514A4 /* SkillsViewCell.swift in Sources */,
+				2F8C6E692B34310A004514A4 /* AboutMeTableViewCell.swift in Sources */,
+				2F8C6E6B2B343130004514A4 /* LanguagesViewCell.swift in Sources */,
+				2F8C6E542B342F8C004514A4 /* Identifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F1EBC5B2B2C3168009F5BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F1EBC5C2B2C3168009F5BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F1EBC5E2B2C3168009F5BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AayushPortfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = J6RUBNL6DQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayushkumar.AayushPortfolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F1EBC5F2B2C3168009F5BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AayushPortfolio/Preview Content\"";
+				DEVELOPMENT_TEAM = J6RUBNL6DQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aayushkumar.AayushPortfolio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F1EBC4A2B2C3167009F5BEE /* Build configuration list for PBXProject "AayushPortFolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1EBC5B2B2C3168009F5BEE /* Debug */,
+				2F1EBC5C2B2C3168009F5BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F1EBC5D2B2C3168009F5BEE /* Build configuration list for PBXNativeTarget "AayushPortFolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1EBC5E2B2C3168009F5BEE /* Debug */,
+				2F1EBC5F2B2C3168009F5BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F1EBC472B2C3167009F5BEE /* Project object */;
+}
